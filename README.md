@@ -5,12 +5,6 @@
 Check a computer's battery, hard disk, real specs, errors, network and security in a few minutes, with no installation. Built for technicians, IT support staff, and anyone buying a used, ex-UK or refurbished laptop.
 
 <p align="center">
-  <a href="docs/images/poster-1.png">
-    <img src="docs/images/poster-1.png" alt="PC Checkup Toolkit" width="450">
-  </a>
-</p>
-
-<p align="center">
   <a href="https://github.com/L00P3R93/pc-checkup-toolkit/releases/latest">
     <img src="https://img.shields.io/badge/⬇_Download-Latest_Release-2ea44f?style=for-the-badge" alt="Download latest release">
   </a>
