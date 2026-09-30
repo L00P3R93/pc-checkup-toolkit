@@ -10,6 +10,12 @@ Check a computer's battery, hard disk, real specs, errors, network and security 
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/L00P3R93/pc-checkup-toolkit/releases/latest">
+    <img src="https://img.shields.io/badge/⬇_Download-Latest_Release-2ea44f?style=for-the-badge" alt="Download latest release">
+  </a>
+</p>
+
 ---
 
 ## Why use it?
@@ -31,18 +37,19 @@ Check a computer's battery, hard disk, real specs, errors, network and security 
 
 ## Quick start (no technical knowledge needed)
 
-1. Click the green **Code** button, then **Download ZIP**, or get the latest version from [Releases](../../releases/latest).
-2. Extract the ZIP and copy **`toolkit.ps1`** and **`start-toolkit.bat`** to your USB flash drive (same folder).
-3. On any Windows PC, plug in the USB and **double-click `start-toolkit.bat`**.
+1. Go to the [latest release](https://github.com/L00P3R93/pc-checkup-toolkit/releases/latest) and download **PC-Checkup-Toolkit-vX.X.X.zip** under *Assets*.
+   (Ignore the "Source code" files; those are for developers.)
+2. Extract the ZIP and copy the **`PC-Checkup-Toolkit`** folder to your USB flash drive.
+3. On any Windows PC, plug in the USB, open the folder and **double-click `start-toolkit.bat`**.
 4. Click **Yes** when Windows asks for administrator permission.
 5. Type a number from the menu and press **Enter**.
 
-Reports are saved on your USB in `Reports\COMPUTER-NAME_date-time\`.
+Reports are saved on your USB in `PC-Checkup-Toolkit\Reports\COMPUTER-NAME_date-time\`.
 
 ### Running from a PowerShell terminal
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File E:\toolkit.ps1
+powershell -ExecutionPolicy Bypass -File E:\PC-Checkup-Toolkit\toolkit.ps1
 ```
 
 Replace `E:` with your USB drive letter. Run PowerShell **as Administrator** for full results.
@@ -95,7 +102,7 @@ Use `start-toolkit.bat` or the `-ExecutionPolicy Bypass` command above. Neither 
 **Script is blocked after downloading**
 Right-click `toolkit.ps1`, choose **Properties**, tick **Unblock** and click **OK**. Or run:
 ```powershell
-Unblock-File E:\toolkit.ps1
+Unblock-File E:\PC-Checkup-Toolkit\toolkit.ps1
 ```
 
 **"SMART data not exposed by this drive"**
@@ -113,7 +120,7 @@ Open `toolkit.ps1` in Notepad and edit the settings at the top:
 ```powershell
 $ToolkitName = "PC CHECKUP TOOLKIT"
 $TechName    = "Your Name"
-$TechContact = "0712 345 678"
+$TechContact = "Your Phone Number or Email Address"
 ```
 
 Your name and contact will show on every screen and in every report log.
@@ -134,10 +141,15 @@ Found a bug or have an idea? [Open an issue](../../issues) or submit a pull requ
 
 ## Author
 
-**Vincet Kioko**
+**Vincent Kioko**
 
-WhatsApp: [+254727796831]
-
-GitHub: [@L00P3R93](https://github.com/L00P3R93)
+<p>
+  <a href="https://wa.me/254727796831" title="Chat on WhatsApp"><img src="docs/svg/whatsapp-icon.svg" alt="WhatsApp" width="32" height="32"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/L00P3R93" title="GitHub profile"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/svg/GitHub_dark.svg">
+    <img src="docs/svg/GitHub_light.svg" alt="GitHub" width="32" height="32">
+  </picture></a>
+</p>
 
 If this toolkit helped you, give the repo a star and share it with someone buying a laptop or in IT.
